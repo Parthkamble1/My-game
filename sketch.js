@@ -144,13 +144,13 @@ if(lives === 0){
     gameState = "End"
 }
 if(score > 15){
-var newScore = score+Math.round((score/score)*0)     
-astroied1Grup.setVelocityYEach(newScore);
-astroied2Grup.setVelocityYEach(newScore);
-astroied3Grup.setVelocityYEach(newScore);
-astroied4Grup.setVelocityYEach(newScore);
-astroied5Grup.setVelocityYEach(newScore);
-astroied6Grup.setVelocityYEach(newScore);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+astroied1Grup.setVelocityYEach(6+3*score/15);
+astroied2Grup.setVelocityYEach(6+3*score/15);
+astroied3Grup.setVelocityYEach(6+3*score/15);
+astroied4Grup.setVelocityYEach(6+3*score/15);
+astroied5Grup.setVelocityYEach(6+3*score/15);
+astroied6Grup.setVelocityYEach(6+3*score/15);
 
 }
 }
@@ -181,6 +181,7 @@ text("Score="+score,100,190)
 text("Lives="+lives,100,150)
 
 
+
 }
 
 function spawnAstroied1(){
@@ -190,8 +191,7 @@ function spawnAstroied1(){
     astroied1.velocityY = 2.5
     astroied1Grup.add(astroied1)
     astroied1Grup.setLifetimeEach(800);
-    
-}
+}   
 function spawnAstroied2(){
     astroied2 = createSprite(Math.round(random(0,displayWidth)),0);
     astroied2.addImage(astroied2Img)
